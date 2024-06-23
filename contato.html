@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>contato-China css</title>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imag/china_ic.png"/>
+    <link rel="stylesheet" type="text/css" href="menu_china.css">
+    <link rel="icon" type="image/png" href="imag/china_ic.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script language="javascript" type="text/JavaScript">
+        function validar() {
+            var data_cad = form1.data_cad.value;
+            var nome_prop = form1.nome_prop.value;
+            var endereço = form1.endereço.value;
+            var nome_an = form1.nome_an.value;
+            var raça = form1.raça.value;   
+            var obs = form1.obs.value; 
+        
+        
+        
+         if (data_cad== ""){
+            alert ('insira a data de nascimento')
+            form1.data_cad.focus();
+          return false;
+        }
+        if (nome_prop== ""){
+            alert ('insira o seu nome ')
+            form1.nome_prop.focus();
+          return false;
+        }
+        
+        
+        if (raça== ""){
+            alert ('insira uma nota para o site')
+            form1.raça.focus();
+          return false;
+        }
+        if (obs== ""){
+            alert ('observações')
+            form1.obs.focus();
+          return false;
+        }
+        if (nome.lenght<5 ){
+            alert ('Digite seu nome completo ')
+            form1.nome.focus();
+          return false;
+        }
+       
+
+    }
+     </script>
+</head>
+
+
+<body bgcolor="#DAB2B2">
+    <nav id="menu">
+        <ul>
+            <li> <a href="home.html"><img src="imag/china.png" width="35"><font size="4"> HOME  </font></a></li>
+            <li> <a href="Hist.html"><img src="imag/dragao.png" width="35"><font size="4"> HISTÓRIA</font></a></li>
+            <li> <a href="Geo.html"><img src="imag/china_2.png" width="35"><font size="4"> GEOGRAFIA</font></a></li>
+            <li> <a href="Cult.html"><img src="imag/cultura.png" width="35"><font size="4"> CULTURA</font></a></li>
+            <li> <a href="Monumentos.html"><img src="imag/templo.png" width="35"><font size="4"> MONUMENTOS</font></a></li>
+            <li> <a href="gastr.html"><img src="imag/gastr.png" width="35"><font size="4"> GASTRONOMIA</font></a></li>
+           <li> <a href="Not.html"><img src="imag/realizacao.png" width="35"><font size="4"> NOTÁVEIS</font></a></li>
+            <li> <a href="bibl.html"><img src="imag/lista-de-reproducao.png" width="35"><font size="4"> BIBLIOGRAFIA</font></a></li>
+            <li> <a href="contato.html"><img src="imag/contato.png" width="35"><font size="4"> CONTATO</font></a></li>
+          
+            
+
+
+
+
+
+        </ul>
+    </nav>
+    <br><br>
+    <center>
+        <font face="Gill Sans MT" color="#3A0000" size="6">  <h1>Deixe aqui seus dados e sua opinião </h1></font>
+       <br><br>
+
+    <form name="form1" action="confirma.html" method="post">
+
+     <center>  
+                Data de Nascimento <input name="data_cad" type="date"> <br><br>
+                Nome <input name="nome_prop" type="text"> <br> <br>
+            
+               Nota
+                <select name="raça">
+                <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                 </select><br><br>
+                observações <br><textarea cols="50" rows="20" name="obs"></textarea><br><br>
+            <input type="submit" onclick="return validar()">
+            <input type="reset" name="limpa" value="LIMPAR"></center>
+        </form>
+     
+     <br><br><br><br><br><br><br>
+    <hr><center> <h5> Talita de Assis Godoy <b>2024 - &copyTodos os direitos reservados</b><br>
+    <u> Trabalho acadêmico sem fins lucrativos</h5></u> </center>
+    <div align="right"><a href="#"><img src="imag/muralha.png" width="70"></a></div>
+    
+    
+</body>
+</html>
